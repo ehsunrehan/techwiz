@@ -16,6 +16,11 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/anilist-test', function () {
-    return 'AniList connection test';
-});
+Route::get('/products', function () {
+    return view('products');
+})->name('products');
+ 
+
+Route::get('/markets', function () {
+    return view('markets');
+})->name('markets');
